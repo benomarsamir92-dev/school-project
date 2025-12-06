@@ -9,23 +9,6 @@ import socket
 from pathlib import Path
 import dj_database_url
 
-# Database configuration
-if 'RENDER' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.config(
-            default=os.environ.get('DATABASE_URL'),
-            conn_max_age=600
-        )
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -85,6 +68,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # ADDED - Must be after SecurityMiddleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',  # Keep for language detection
     'django.middleware.common.CommonMiddleware',
@@ -119,15 +103,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'school_project.wsgi.application'
-
-# Database
-# Use SQLite for easier local development
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -343,7 +318,7 @@ print(f"   - ✅ Gettext dependency removed - Translations will work!")
 
 # ==================== RENDER CONFIGURATION ====================
 if 'RENDER' in os.environ:
-    # Render PostgreSQL configuration (override the earlier one)
+    # Render PostgreSQL configuration
     DATABASES = {
         'default': dj_database_url.config(
             default=os.environ.get('DATABASE_URL'),
@@ -371,11 +346,16 @@ if 'RENDER' in os.environ:
     
     # Use WhiteNoise for static files
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-    MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
     
     print(f"✅ Render production mode activated")
     print(f"✅ ALLOWED_HOSTS: {ALLOWED_HOSTS}")
 else:
-    # Local development settings
+    # Local development settings - SQLite
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
     DEBUG = True
-    print("✅ Local development mode")
+    print("✅ Local development mode - SQLite")
