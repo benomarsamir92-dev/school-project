@@ -1,6 +1,1 @@
-Django==3.2.25  # Use OLDER stable version
-gunicorn==20.1.0
-psycopg2-binary==2.9.9
-dj-database-url==1.2.0
-whitenoise==6.4.0
-Pillow==10.0.0
+Django==4.2.7
