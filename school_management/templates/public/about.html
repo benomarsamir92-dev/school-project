@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - {{ school_name }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .navbar-nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .navbar-nav a:hover {
+            color: #3498db;
+        }
+        
+        .btn-login {
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .about-header {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .about-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-section {
+            margin-bottom: 2rem;
+        }
+
+        .about-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-developer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}" class="navbar-brand">{{ school_name }}</a>
+        <div class="navbar-nav">
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'staff_login' %}" class="btn-login">Staff Login</a>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About Trust Academy</h1>
+            <p style="font-size: 1.2rem; color: #666;">More than childcare, a complete learning institution</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-section">
+                <h2>Our Institution</h2>
+                <p>TRUST ACADEMY is not just a mode of childcare but a dedicated learning environment. We are a complete educational institution committed to providing quality education and holistic development for young learners.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Location</h2>
+                <p><strong>Address:</strong> Lotissement Ibn Khaldoun 1200, Villa Numéro 22</p>
+                <p><strong>Phone:</strong> 05 61 15 28 00 / 024 79 20 64</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Our Key Features</h2>
+                <ul class="features-list">
+                    <li><strong>School environment adapted for young children</strong> - Safe, stimulating spaces designed specifically for early childhood education</li>
+                    <li><strong>Specialized learning methodologies</strong> - Innovative teaching approaches tailored to different learning styles</li>
+                    <li><strong>Focus on learning and community living</strong> - Emphasizing social skills and community engagement alongside academic growth</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h2>Our Mission</h2>
+                <p>To provide a nurturing educational environment where children can develop academically, socially, and emotionally, preparing them for future academic success and lifelong learning.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-developer">
+            <p>© 2025 SB | IntelliManage Team. All rights reserved.</p>
+            <p>Contact: +213 794989473 | sa.benammar@gmail.com</p>
+            <p><em>Professional School Management Solutions</em></p>
+        </div>
+    </footer>
+</body>
+</html>

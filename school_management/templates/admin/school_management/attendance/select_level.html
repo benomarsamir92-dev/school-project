@@ -1,0 +1,215 @@
+﻿{% extends "admin/change_form.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <style>
+        .level-filter-section {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        .level-filter-section h2 {
+            color: #495057;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .level-selector {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .level-selector select {
+            min-width: 220px;
+            padding: 14px 18px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 16px;
+            height: auto;
+            line-height: 1.5;
+            background-color: white;
+            transition: border-color 0.15s ease-in-out;
+        }
+        .level-selector select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+        .level-selector button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            transition: background-color 0.15s ease-in-out;
+            height: 48px;
+            box-sizing: border-box;
+        }
+        .level-selector button:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+        }
+        .clear-filter-btn {
+            background: #6c757d !important;
+            padding: 12px 20px !important;
+        }
+        .clear-filter-btn:hover {
+            background: #5a6268 !important;
+        }
+        .current-level-info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            color: #0c5460;
+            font-size: 14px;
+        }
+        .student-field-highlight {
+            background: #e8f5e8;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+    </style>
+{% endblock %}
+
+{% block field_sets %}
+    {% if add %}
+    <div class="level-filter-section">
+        <h2>📊 {% trans "Step 1: Select Student Level for Attendance" %}</h2>
+        
+        <div class="level-selector">
+            <select id="level_selector" name="level_selector">
+                <option value="">{% trans "--- Select Level ---" %}</option>
+                {% for level in available_levels %}
+                    <option value="{{ level }}" {% if current_level == level %}selected{% endif %}>
+                        {{ level }}
+                    </option>
+                {% endfor %}
+            </select>
+            
+            <button type="button" onclick="applyLevelFilter()" id="apply_level_btn">
+                {% trans "Filter Students" %}
+            </button>
+            
+            {% if current_level %}
+            <button type="button" onclick="clearLevelFilter()" class="clear-filter-btn">
+                {% trans "Clear Filter" %}
+            </button>
+            {% endif %}
+        </div>
+        
+        {% if current_level %}
+        <div class="current-level-info">
+            <strong>{% trans "Currently viewing:" %}</strong> {{ current_level }}
+            <br>
+            <small>{% trans "Only students from this level are shown in the student dropdown below." %}</small>
+        </div>
+        {% else %}
+        <div style="margin-top: 10px; color: #6c757d; font-style: italic;">
+            {% trans "Select a level to filter students for attendance recording." %}
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {{ block.super }}
+{% endblock %}
+
+{% block admin_change_form_document_ready %}
+    {{ block.super }}
+    
+    <script>
+        function applyLevelFilter() {
+            const levelSelector = document.getElementById('level_selector');
+            const selectedLevel = levelSelector.value;
+            const applyBtn = document.getElementById('apply_level_btn');
+            
+            if (!selectedLevel) {
+                alert('{% trans "Please select a level first" %}');
+                return;
+            }
+            
+            // Show loading state
+            applyBtn.innerHTML = '{% trans "Filtering..." %}';
+            applyBtn.disabled = true;
+            
+            const url = new URL(window.location);
+            url.searchParams.set('level', selectedLevel);
+            
+            // Preserve other query parameters
+            const currentParams = new URLSearchParams(window.location.search);
+            currentParams.forEach((value, key) => {
+                if (key !== 'level') {
+                    url.searchParams.set(key, value);
+                }
+            });
+            
+            window.location.href = url.toString();
+        }
+        
+        function clearLevelFilter() {
+            const url = new URL(window.location);
+            url.searchParams.delete('level');
+            
+            // Preserve other query parameters
+            const currentParams = new URLSearchParams(window.location.search);
+            currentParams.forEach((value, key) => {
+                if (key !== 'level') {
+                    url.searchParams.set(key, value);
+                }
+            });
+            
+            window.location.href = url.toString();
+        }
+        
+        // Auto-apply filter when Enter is pressed
+        document.getElementById('level_selector').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                applyLevelFilter();
+            }
+        });
+        
+        // Highlight the student field when filtered
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLevel = '{{ current_level }}';
+            if (currentLevel) {
+                const studentField = document.querySelector('.field-student');
+                if (studentField) {
+                    studentField.classList.add('student-field-highlight');
+                    
+                    const studentLabel = studentField.querySelector('label');
+                    if (studentLabel) {
+                        studentLabel.innerHTML = studentLabel.innerHTML + 
+                            ' <span style="color: #28a745; font-weight: normal;">(Filtered by: ' + currentLevel + ')</span>';
+                    }
+                }
+                
+                setTimeout(() => {
+                    const studentSelect = document.getElementById('id_student');
+                    if (studentSelect) {
+                        studentSelect.focus();
+                    }
+                }, 500);
+            }
+            
+            // Focus on level selector by default
+            const levelSelector = document.getElementById('level_selector');
+            if (levelSelector && !currentLevel) {
+                setTimeout(() => {
+                    levelSelector.focus();
+                }, 300);
+            }
+        });
+    </script>
+{% endblock %}

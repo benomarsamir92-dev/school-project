@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Login - Trust Academy</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #007cba; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        .messages { margin: 20px 0; }
+        .error { color: red; padding: 10px; background: #ffe6e6; border: 1px solid red; }
+        .success { color: green; padding: 10px; background: #e6ffe6; border: 1px solid green; }
+    </style>
+</head>
+<body>
+    <h1>🔐 Staff Login</h1>
+    <p>Welcome to Trust Academy Staff Portal</p>
+    
+    <div class="messages">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="{% if message.tags %}{{ message.tags }}{% else %}info{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="id_username">Username:</label>
+            {{ form.username }}
+            {% if form.username.errors %}
+                <div class="error">{{ form.username.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <div class="form-group">
+            <label for="id_password">Password:</label>
+            {{ form.password }}
+            {% if form.password.errors %}
+                <div class="error">{{ form.password.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <button type="submit">Login</button>
+    </form>
+    
+    <p style="margin-top: 20px;">
+        <a href="/">← Back to Homepage</a>
+    </p>
+    
+    <hr>
+    <p><small>Need help? Contact school administration.</small></p>
+</body>
+</html>

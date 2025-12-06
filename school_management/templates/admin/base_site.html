@@ -1,0 +1,33 @@
+﻿{% extends "admin/base.html" %}
+{% load i18n static %}
+
+{% block title %}Trust Academy School{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <img src="{% static 'images/school-logo.png' %}" width="80px" height="80px" style="margin-right: 10px; vertical-align: middle;">
+    <a href="{% url 'admin:index' %}">TRUST ACADEMY SCHOOL</a>
+</h1>
+{% endblock %}
+
+{% block userlinks %}
+    <!-- Language Switcher -->
+    <form action="{% url 'set_language' %}" method="post" id="language-form" style="display: inline;">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="/admin/">
+        <select name="language" id="language-select">
+            <option value="en" {% if request.LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
+            <option value="fr" {% if request.LANGUAGE_CODE == 'fr' %}selected{% endif %}>Français</option>
+            <option value="ar" {% if request.LANGUAGE_CODE == 'ar' %}selected{% endif %}>العربية</option>
+        </select>
+    </form>
+    <script>
+        document.getElementById('language-select').addEventListener('change', function() {
+            document.getElementById('language-form').submit();
+        });
+    </script>
+    /
+    {{ block.super }}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

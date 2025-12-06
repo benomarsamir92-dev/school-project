@@ -1,0 +1,2572 @@
+# Arabic translations for Trust Academy
+# Copyright (C) 2025 Trust Academy
+# This file is distributed under the same license as the Trust Academy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Trust Academy 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-18 14:40+0100\n"
+"PO-Revision-Date: 2025-11-17 16:30+0100\n"
+"Last-Translator: Trust Academy <admin@trustacademy.com>\n"
+"Language-Team: Arabic <admin@trustacademy.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: .\school_management\admin.py:53
+msgid "Trust Academy Administration"
+msgstr "إدارة أكاديمية ترست"
+
+#: .\school_management\admin.py:54
+msgid "Trust Academy School Management"
+msgstr "إدارة مدرسة أكاديمية ترست"
+
+#: .\school_management\admin.py:55
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: .\school_management\admin.py:69 .\school_management\admin.py:200
+#: .\school_management\admin.py:244 .\school_management\admin.py:285
+#: .\school_management\admin.py:368 .\school_management\models.py:131
+msgid "Student"
+msgstr "الطالب"
+
+#: .\school_management\admin.py:70 .\school_management\models.py:132
+msgid "Students"
+msgstr "الطلاب"
+
+#: .\school_management\admin.py:75
+msgid "Student ID"
+msgstr "رقم الطالب"
+
+#: .\school_management\admin.py:76 .\school_management\admin.py:126
+msgid "First name"
+msgstr "الاسم الأول"
+
+#: .\school_management\admin.py:77 .\school_management\admin.py:127
+msgid "Last name"
+msgstr "الاسم الأخير"
+
+#: .\school_management\admin.py:78
+msgid "Gender"
+msgstr "الجنس"
+
+#: .\school_management\admin.py:79
+msgid "Date of birth"
+msgstr "تاريخ الميلاد"
+
+#: .\school_management\admin.py:80
+msgid "Class room"
+msgstr "الفصل الدراسي"
+
+#: .\school_management\admin.py:81 .\school_management\admin.py:154
+#: .\school_management\admin.py:180
+msgid "Grade level"
+msgstr "المستوى الدراسي"
+
+#: .\school_management\admin.py:82
+msgid "Parent name"
+msgstr "اسم ولي الأمر"
+
+#: .\school_management\admin.py:83
+msgid "Parent phone"
+msgstr "هاتف ولي الأمر"
+
+#: .\school_management\admin.py:84
+msgid "Parent email"
+msgstr "بريد ولي الأمر"
+
+#: .\school_management\admin.py:85
+msgid "Enrollment date"
+msgstr "تاريخ التسجيل"
+
+#: .\school_management\admin.py:86 .\school_management\admin.py:132
+#: .\school_management\admin.py:159 .\school_management\admin.py:183
+msgid "Is active"
+msgstr "نشط"
+
+#: .\school_management\admin.py:91 .\school_management\admin.py:108
+#, python-brace-format
+msgid "Hello, this message is regarding your child {} from school."
+msgstr "مرحباً، هذه الرسالة تخص طفلك {} من المدرسة."
+
+#: .\school_management\admin.py:93 .\school_management\admin.py:95
+msgid "WhatsApp"
+msgstr "واتساب"
+
+#: .\school_management\admin.py:94 .\school_management\admin.py:220
+#: .\school_management\admin.py:304
+msgid "No phone"
+msgstr "لا يوجد هاتف"
+
+#: .\school_management\admin.py:102
+#, python-brace-format
+msgid "Successfully sent {} welcome messages via WhatsApp"
+msgstr "تم إرسال {} رسالة ترحيب بنجاح عبر واتساب"
+
+#: .\school_management\admin.py:103
+msgid "📱 Send welcome WhatsApp messages"
+msgstr "📱 إرسال رسائل ترحيب عبر واتساب"
+
+#: .\school_management\admin.py:110
+#, python-brace-format
+msgid "WhatsApp link for {}: {}"
+msgstr "رابط واتساب لـ {}: {}"
+
+#: .\school_management\admin.py:111
+msgid "📱 Generate WhatsApp links"
+msgstr "📱 إنشاء روابط واتساب"
+
+#: .\school_management\admin.py:119 .\school_management\admin.py:120
+#: .\school_management\models.py:51 .\school_management\models.py:52
+msgid "Staff"
+msgstr "الموظفون"
+
+#: .\school_management\admin.py:125
+msgid "Staff ID"
+msgstr "رقم الموظف"
+
+#: .\school_management\admin.py:128
+msgid "Position"
+msgstr "المنصب"
+
+#: .\school_management\admin.py:129 .\school_management\admin.py:348
+msgid "Phone"
+msgstr "الهاتف"
+
+#: .\school_management\admin.py:130
+msgid "Hire date"
+msgstr "تاريخ التعيين"
+
+#: .\school_management\admin.py:131
+msgid "Salary"
+msgstr "الراتب"
+
+#: .\school_management\admin.py:137 .\school_management\admin.py:139
+msgid "User Account"
+msgstr "حساب المستخدم"
+
+#: .\school_management\admin.py:138
+msgid "No user account"
+msgstr "لا يوجد حساب مستخدم"
+
+#: .\school_management\admin.py:147 .\school_management\models.py:88
+msgid "Class Room"
+msgstr "الفصل الدراسي"
+
+#: .\school_management\admin.py:148 .\school_management\models.py:89
+msgid "Class Rooms"
+msgstr "الفصول الدراسية"
+
+#: .\school_management\admin.py:153 .\school_management\admin.py:178
+#: .\school_management\admin.py:328
+msgid "Name"
+msgstr "الاسم"
+
+#: .\school_management\admin.py:155
+msgid "Section"
+msgstr "القسم"
+
+#: .\school_management\admin.py:156 .\school_management\admin.py:181
+#: .\school_management\models.py:29
+msgid "Teacher"
+msgstr "المعلم"
+
+#: .\school_management\admin.py:157
+msgid "Room number"
+msgstr "رقم الغرفة"
+
+#: .\school_management\admin.py:158
+msgid "Capacity"
+msgstr "السعة"
+
+#: .\school_management\admin.py:164
+msgid "Student Count"
+msgstr "عدد الطلاب"
+
+#: .\school_management\admin.py:172 .\school_management\admin.py:286
+#: .\school_management\models.py:152
+msgid "Subject"
+msgstr "المادة"
+
+#: .\school_management\admin.py:173 .\school_management\models.py:153
+msgid "Subjects"
+msgstr "المواد الدراسية"
+
+#: .\school_management\admin.py:179
+msgid "Code"
+msgstr "الكود"
+
+#: .\school_management\admin.py:182
+msgid "Credits"
+msgstr "الساعات المعتمدة"
+
+#: .\school_management\admin.py:194 .\school_management\models.py:242
+msgid "Payment"
+msgstr "الدفع"
+
+#: .\school_management\admin.py:195 .\school_management\models.py:243
+msgid "Payments"
+msgstr "المدفوعات"
+
+#: .\school_management\admin.py:201
+msgid "Payment type"
+msgstr "نوع الدفع"
+
+#: .\school_management\admin.py:202
+msgid "Amount"
+msgstr "المبلغ"
+
+#: .\school_management\admin.py:203
+msgid "Due date"
+msgstr "تاريخ الاستحقاق"
+
+#: .\school_management\admin.py:204
+msgid "Paid date"
+msgstr "تاريخ الدفع"
+
+#: .\school_management\admin.py:205 .\school_management\admin.py:246
+msgid "Status"
+msgstr "الحالة"
+
+#: .\school_management\admin.py:206
+msgid "Receipt number"
+msgstr "رقم الإيصال"
+
+#: .\school_management\admin.py:211
+#, python-brace-format
+msgid "Reminder: {} fee of {} DZD for {} is {}. Due: {}"
+msgstr "تذكير: رسوم {} بقيمة {} دينار جزائري لـ {} هي {}. الاستحقاق: {}"
+
+#: .\school_management\admin.py:219 .\school_management\admin.py:221
+msgid "Remind"
+msgstr "تذكير"
+
+#: .\school_management\admin.py:228
+#, python-brace-format
+msgid "Successfully sent {} fee reminders via WhatsApp"
+msgstr "تم إرسال {} تذكير بالرسوم بنجاح عبر واتساب"
+
+#: .\school_management\admin.py:229
+msgid "💰 Send WhatsApp fee reminders"
+msgstr "💰 إرسال تذكيرات الرسوم عبر واتساب"
+
+#: .\school_management\admin.py:238 .\school_management\admin.py:239
+#: .\school_management\models.py:176 .\school_management\models.py:177
+msgid "Attendance"
+msgstr "الحضور"
+
+#: .\school_management\admin.py:245
+msgid "Date"
+msgstr "التاريخ"
+
+#: .\school_management\admin.py:247
+msgid "Notes"
+msgstr "ملاحظات"
+
+#: .\school_management\admin.py:252
+#, python-brace-format
+msgid "Attendance Notice: {} was {} on {}"
+msgstr "إشعار الحضور: {} كان {} في {}"
+
+#: .\school_management\admin.py:258
+#, python-brace-format
+msgid ". Notes: {}"
+msgstr ". ملاحظات: {}"
+
+#: .\school_management\admin.py:260 .\school_management\admin.py:262
+msgid "Notify"
+msgstr "إشعار"
+
+#: .\school_management\admin.py:269
+#, python-brace-format
+msgid "Successfully sent {} attendance notifications via WhatsApp"
+msgstr "تم إرسال {} إشعار حضور بنجاح عبر واتساب"
+
+#: .\school_management\admin.py:270
+msgid "📚 Send WhatsApp attendance notifications"
+msgstr "📚 إرسال إشعارات الحضور عبر واتساب"
+
+#: .\school_management\admin.py:279 .\school_management\models.py:203
+#: .\school_management\templates\admin\document_generator.html:126
+msgid "Grade"
+msgstr "الدرجة"
+
+#: .\school_management\admin.py:280 .\school_management\models.py:204
+msgid "Grades"
+msgstr "الدرجات"
+
+#: .\school_management\admin.py:287
+msgid "Semester"
+msgstr "الفصل الدراسي"
+
+#: .\school_management\admin.py:288
+msgid "Year"
+msgstr "السنة"
+
+#: .\school_management\admin.py:289
+msgid "Score"
+msgstr "الدرجة"
+
+#: .\school_management\admin.py:290
+msgid "Comments"
+msgstr "تعليقات"
+
+#: .\school_management\admin.py:295
+#, python-brace-format
+msgid "Grade Update: {} scored {} in {} (Semester {}, {})"
+msgstr "تحديث الدرجات: {} حصل على {} في {} (الفصل الدراسي {}, {})"
+
+#: .\school_management\admin.py:303 .\school_management\admin.py:305
+msgid "Share"
+msgstr "مشاركة"
+
+#: .\school_management\admin.py:312
+#, python-brace-format
+msgid "Successfully sent {} grade notifications via WhatsApp"
+msgstr "تم إرسال {} إشعار درجات بنجاح عبر واتساب"
+
+#: .\school_management\admin.py:313
+msgid "📊 Send WhatsApp grade notifications"
+msgstr "📊 إرسال إشعارات الدرجات عبر واتساب"
+
+#: .\school_management\admin.py:322 .\school_management\models.py:276
+msgid "Inventory Item"
+msgstr "عنصر المخزون"
+
+#: .\school_management\admin.py:323 .\school_management\models.py:277
+msgid "Inventory Items"
+msgstr "عناصر المخزون"
+
+#: .\school_management\admin.py:329
+msgid "Category"
+msgstr "الفئة"
+
+#: .\school_management\admin.py:330
+msgid "Quantity"
+msgstr "الكمية"
+
+#: .\school_management\admin.py:331
+msgid "Location"
+msgstr "الموقع"
+
+#: .\school_management\admin.py:332
+msgid "Is available"
+msgstr "متاح"
+
+#: .\school_management\admin.py:340 .\school_management\admin.py:341
+#: .\school_management\models.py:20 .\school_management\models.py:21
+msgid "School Configuration"
+msgstr "إعدادات المدرسة"
+
+#: .\school_management\admin.py:346
+msgid "School name"
+msgstr "اسم المدرسة"
+
+#: .\school_management\admin.py:347
+msgid "Address"
+msgstr "العنوان"
+
+#: .\school_management\admin.py:349
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: .\school_management\admin.py:350
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#: .\school_management\admin.py:351 .\school_management\admin.py:369
+msgid "Academic year"
+msgstr "السنة الدراسية"
+
+#: .\school_management\admin.py:352
+msgid "Currency"
+msgstr "العملة"
+
+#: .\school_management\admin.py:362 .\school_management\models.py:298
+msgid "Student Certificate"
+msgstr "شهادة الطالب"
+
+#: .\school_management\admin.py:363 .\school_management\models.py:299
+#: .\school_management\templates\admin\document_generator.html:222
+msgid "Student Certificates"
+msgstr "شهادات الطلاب"
+
+#: .\school_management\admin.py:370
+msgid "Level"
+msgstr "المستوى"
+
+#: .\school_management\admin.py:371
+msgid "Registration number"
+msgstr "رقم التسجيل"
+
+#: .\school_management\admin.py:372
+msgid "Institution name"
+msgstr "اسم المؤسسة"
+
+#: .\school_management\admin.py:373
+msgid "License number"
+msgstr "رقم الترخيص"
+
+#: .\school_management\admin.py:374
+msgid "Director name"
+msgstr "اسم المدير"
+
+#: .\school_management\admin.py:375
+msgid "Issue city"
+msgstr "مدينة الإصدار"
+
+#: .\school_management\admin.py:376
+msgid "Issue date"
+msgstr "تاريخ الإصدار"
+
+#: .\school_management\admin.py:377
+msgid "Is issued"
+msgstr "تم الإصدار"
+
+#: .\school_management\admin.py:378
+msgid "Certificate number"
+msgstr "رقم الشهادة"
+
+#: .\school_management\admin.py:383
+msgid "Student Name"
+msgstr "اسم الطالب"
+
+#: .\school_management\admin.py:388
+msgid "Generate PDF certificates for selected"
+msgstr "إنشاء شهادات PDF للمحددين"
+
+#: .\school_management\models.py:10
+#, fuzzy
+#| msgid "School name"
+msgid "school name"
+msgstr "اسم المدرسة"
+
+#: .\school_management\models.py:11 .\school_management\models.py:43
+#, fuzzy
+#| msgid "Address"
+msgid "address"
+msgstr "العنوان"
+
+#: .\school_management\models.py:12 .\school_management\models.py:42
+#, fuzzy
+#| msgid "Phone"
+msgid "phone"
+msgstr "الهاتف"
+
+#: .\school_management\models.py:13
+#, fuzzy
+#| msgid "Email"
+msgid "email"
+msgstr "البريد الإلكتروني"
+
+#: .\school_management\models.py:14
+#, fuzzy
+#| msgid "Website"
+msgid "website"
+msgstr "الموقع الإلكتروني"
+
+#: .\school_management\models.py:15
+msgid "logo"
+msgstr ""
+
+#: .\school_management\models.py:16 .\school_management\models.py:286
+#, fuzzy
+#| msgid "Academic year"
+msgid "academic year"
+msgstr "السنة الدراسية"
+
+#: .\school_management\models.py:17
+#, fuzzy
+#| msgid "Currency"
+msgid "currency"
+msgstr "العملة"
+
+#: .\school_management\models.py:30
+msgid "Administrator"
+msgstr ""
+
+#: .\school_management\models.py:31
+msgid "Principal"
+msgstr ""
+
+#: .\school_management\models.py:32
+#, fuzzy
+#| msgid "User Account"
+msgid "Accountant"
+msgstr "حساب المستخدم"
+
+#: .\school_management\models.py:33
+msgid "Secretary"
+msgstr ""
+
+#: .\school_management\models.py:34
+msgid "Librarian"
+msgstr ""
+
+#: .\school_management\models.py:37
+msgid "user"
+msgstr ""
+
+#: .\school_management\models.py:38
+#, fuzzy
+#| msgid "Staff ID"
+msgid "staff ID"
+msgstr "رقم الموظف"
+
+#: .\school_management\models.py:39 .\school_management\models.py:104
+#, fuzzy
+#| msgid "First name"
+msgid "first name"
+msgstr "الاسم الأول"
+
+#: .\school_management\models.py:40 .\school_management\models.py:105
+#, fuzzy
+#| msgid "Last name"
+msgid "last name"
+msgstr "الاسم الأخير"
+
+#: .\school_management\models.py:41
+#, fuzzy
+#| msgid "Position"
+msgid "position"
+msgstr "المنصب"
+
+#: .\school_management\models.py:44
+#, fuzzy
+#| msgid "Hire date"
+msgid "hire date"
+msgstr "تاريخ التعيين"
+
+#: .\school_management\models.py:45
+#, fuzzy
+#| msgid "Salary"
+msgid "salary"
+msgstr "الراتب"
+
+#: .\school_management\models.py:46 .\school_management\models.py:84
+#: .\school_management\models.py:123 .\school_management\models.py:149
+#, fuzzy
+#| msgid "Is active"
+msgid "is active"
+msgstr "نشط"
+
+#: .\school_management\models.py:47 .\school_management\models.py:85
+#: .\school_management\models.py:127 .\school_management\models.py:199
+#: .\school_management\models.py:238 .\school_management\models.py:272
+msgid "created at"
+msgstr ""
+
+#: .\school_management\models.py:48 .\school_management\models.py:128
+#: .\school_management\models.py:200 .\school_management\models.py:239
+#: .\school_management\models.py:273
+msgid "updated at"
+msgstr ""
+
+#: .\school_management\models.py:64
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 1"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:65
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 2"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:66
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 3"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:67
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 4"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:68
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 5"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:69
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 6"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:70
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 7"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:71
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 8"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:72
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 9"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:73
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 10"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:74
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 11"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:75
+#, fuzzy
+#| msgid "Grade"
+msgid "Grade 12"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:78 .\school_management\models.py:143
+#: .\school_management\models.py:261
+#, fuzzy
+#| msgid "Last name"
+msgid "name"
+msgstr "الاسم الأخير"
+
+#: .\school_management\models.py:79 .\school_management\models.py:109
+#: .\school_management\models.py:146
+#, fuzzy
+#| msgid "Grade level"
+msgid "grade level"
+msgstr "المستوى الدراسي"
+
+#: .\school_management\models.py:80
+#, fuzzy
+#| msgid "Section"
+msgid "section"
+msgstr "القسم"
+
+#: .\school_management\models.py:81 .\school_management\models.py:147
+#, fuzzy
+#| msgid "Teacher"
+msgid "teacher"
+msgstr "المعلم"
+
+#: .\school_management\models.py:82
+#, fuzzy
+#| msgid "Room number"
+msgid "room number"
+msgstr "رقم الغرفة"
+
+#: .\school_management\models.py:83
+#, fuzzy
+#| msgid "Capacity"
+msgid "capacity"
+msgstr "السعة"
+
+#: .\school_management\models.py:99
+msgid "Male"
+msgstr ""
+
+#: .\school_management\models.py:100
+msgid "Female"
+msgstr ""
+
+#: .\school_management\models.py:103
+#, fuzzy
+#| msgid "Student ID"
+msgid "student ID"
+msgstr "رقم الطالب"
+
+#: .\school_management\models.py:106
+#, fuzzy
+#| msgid "Gender"
+msgid "gender"
+msgstr "الجنس"
+
+#: .\school_management\models.py:107
+#, fuzzy
+#| msgid "Date of birth"
+msgid "date of birth"
+msgstr "تاريخ الميلاد"
+
+#: .\school_management\models.py:108
+#, fuzzy
+#| msgid "Class room"
+msgid "class room"
+msgstr "الفصل الدراسي"
+
+#: .\school_management\models.py:111
+#, fuzzy
+#| msgid "Parent name"
+msgid "parent name"
+msgstr "اسم ولي الأمر"
+
+#: .\school_management\models.py:112
+#, fuzzy
+#| msgid "Parent phone"
+msgid "parent phone"
+msgstr "هاتف ولي الأمر"
+
+#: .\school_management\models.py:113
+#, fuzzy
+#| msgid "Parent email"
+msgid "parent email"
+msgstr "بريد ولي الأمر"
+
+#: .\school_management\models.py:114
+#, fuzzy
+#| msgid "Parent name"
+msgid "parent address"
+msgstr "اسم ولي الأمر"
+
+#: .\school_management\models.py:116
+msgid "emergency contact name"
+msgstr ""
+
+#: .\school_management\models.py:117
+msgid "emergency contact phone"
+msgstr ""
+
+#: .\school_management\models.py:119
+msgid "medical conditions"
+msgstr ""
+
+#: .\school_management\models.py:120
+msgid "allergies"
+msgstr ""
+
+#: .\school_management\models.py:122
+#, fuzzy
+#| msgid "Enrollment date"
+msgid "enrollment date"
+msgstr "تاريخ التسجيل"
+
+#: .\school_management\models.py:124
+msgid "photo"
+msgstr ""
+
+#: .\school_management\models.py:125 .\school_management\models.py:171
+#: .\school_management\models.py:235 .\school_management\models.py:270
+#, fuzzy
+#| msgid "Notes"
+msgid "notes"
+msgstr "ملاحظات"
+
+#: .\school_management\models.py:144
+msgid "code"
+msgstr ""
+
+#: .\school_management\models.py:145 .\school_management\models.py:263
+#, fuzzy
+#| msgid "Section"
+msgid "description"
+msgstr "القسم"
+
+#: .\school_management\models.py:148
+#, fuzzy
+#| msgid "Credits"
+msgid "credits"
+msgstr "الساعات المعتمدة"
+
+#: .\school_management\models.py:162
+msgid "Present"
+msgstr ""
+
+#: .\school_management\models.py:163
+msgid "Absent"
+msgstr ""
+
+#: .\school_management\models.py:164
+msgid "Late"
+msgstr ""
+
+#: .\school_management\models.py:165
+msgid "Excused"
+msgstr ""
+
+#: .\school_management\models.py:168 .\school_management\models.py:191
+#: .\school_management\models.py:229 .\school_management\models.py:285
+#, fuzzy
+#| msgid "students"
+msgid "student"
+msgstr "الطلاب"
+
+#: .\school_management\models.py:169
+#, fuzzy
+#| msgid "Due date"
+msgid "date"
+msgstr "تاريخ الاستحقاق"
+
+#: .\school_management\models.py:170 .\school_management\models.py:234
+#, fuzzy
+#| msgid "Status"
+msgid "status"
+msgstr "الحالة"
+
+#: .\school_management\models.py:172
+msgid "recorded by"
+msgstr ""
+
+#: .\school_management\models.py:173
+msgid "recorded at"
+msgstr ""
+
+#: .\school_management\models.py:187
+#, fuzzy
+#| msgid "Semester"
+msgid "Semester 1"
+msgstr "الفصل الدراسي"
+
+#: .\school_management\models.py:188
+#, fuzzy
+#| msgid "Semester"
+msgid "Semester 2"
+msgstr "الفصل الدراسي"
+
+#: .\school_management\models.py:192
+#, fuzzy
+#| msgid "Subject"
+msgid "subject"
+msgstr "المادة"
+
+#: .\school_management\models.py:193
+#, fuzzy
+#| msgid "Semester"
+msgid "semester"
+msgstr "الفصل الدراسي"
+
+#: .\school_management\models.py:194
+msgid "year"
+msgstr ""
+
+#: .\school_management\models.py:195
+#, fuzzy
+#| msgid "Score"
+msgid "score"
+msgstr "الدرجة"
+
+#: .\school_management\models.py:197
+#, fuzzy
+#| msgid "Comments"
+msgid "comments"
+msgstr "تعليقات"
+
+#: .\school_management\models.py:198
+msgid "graded by"
+msgstr ""
+
+#: .\school_management\models.py:214
+msgid "Pending"
+msgstr ""
+
+#: .\school_management\models.py:215
+#, fuzzy
+#| msgid "Paid date"
+msgid "Paid"
+msgstr "تاريخ الدفع"
+
+#: .\school_management\models.py:216
+msgid "Overdue"
+msgstr ""
+
+#: .\school_management\models.py:217
+msgid "Cancelled"
+msgstr ""
+
+#: .\school_management\models.py:221
+msgid "Tuition Fee"
+msgstr ""
+
+#: .\school_management\models.py:222
+msgid "Transport Fee"
+msgstr ""
+
+#: .\school_management\models.py:223
+msgid "Lunch Fee"
+msgstr ""
+
+#: .\school_management\models.py:224
+msgid "Uniform Fee"
+msgstr ""
+
+#: .\school_management\models.py:225
+msgid "Books Fee"
+msgstr ""
+
+#: .\school_management\models.py:226 .\school_management\models.py:258
+msgid "Other"
+msgstr ""
+
+#: .\school_management\models.py:230
+#, fuzzy
+#| msgid "Payment type"
+msgid "payment type"
+msgstr "نوع الدفع"
+
+#: .\school_management\models.py:231
+#, fuzzy
+#| msgid "Amount"
+msgid "amount"
+msgstr "المبلغ"
+
+#: .\school_management\models.py:232
+#, fuzzy
+#| msgid "Due date"
+msgid "due date"
+msgstr "تاريخ الاستحقاق"
+
+#: .\school_management\models.py:233
+#, fuzzy
+#| msgid "Paid date"
+msgid "paid date"
+msgstr "تاريخ الدفع"
+
+#: .\school_management\models.py:236
+#, fuzzy
+#| msgid "Receipt number"
+msgid "receipt number"
+msgstr "رقم الإيصال"
+
+#: .\school_management\models.py:237
+msgid "created by"
+msgstr ""
+
+#: .\school_management\models.py:252
+msgid "Furniture"
+msgstr ""
+
+#: .\school_management\models.py:253
+msgid "Electronics"
+msgstr ""
+
+#: .\school_management\models.py:254
+msgid "Books"
+msgstr ""
+
+#: .\school_management\models.py:255
+msgid "Sports Equipment"
+msgstr ""
+
+#: .\school_management\models.py:256
+msgid "Lab Equipment"
+msgstr ""
+
+#: .\school_management\models.py:257
+msgid "Office Supplies"
+msgstr ""
+
+#: .\school_management\models.py:262
+#, fuzzy
+#| msgid "Category"
+msgid "category"
+msgstr "الفئة"
+
+#: .\school_management\models.py:264
+#, fuzzy
+#| msgid "Quantity"
+msgid "quantity"
+msgstr "الكمية"
+
+#: .\school_management\models.py:265
+#, fuzzy
+#| msgid "Location"
+msgid "location"
+msgstr "الموقع"
+
+#: .\school_management\models.py:266
+msgid "supplier"
+msgstr ""
+
+#: .\school_management\models.py:267
+#, fuzzy
+#| msgid "Due date"
+msgid "purchase date"
+msgstr "تاريخ الاستحقاق"
+
+#: .\school_management\models.py:268
+msgid "purchase price"
+msgstr ""
+
+#: .\school_management\models.py:269
+#, fuzzy
+#| msgid "Position"
+msgid "condition"
+msgstr "المنصب"
+
+#: .\school_management\models.py:271
+#, fuzzy
+#| msgid "Is available"
+msgid "is available"
+msgstr "متاح"
+
+#: .\school_management\models.py:287
+#, fuzzy
+#| msgid "Level"
+msgid "level"
+msgstr "المستوى"
+
+#: .\school_management\models.py:287
+msgid "Preparatory"
+msgstr ""
+
+#: .\school_management\models.py:288
+#, fuzzy
+#| msgid "Registration number"
+msgid "registration number"
+msgstr "رقم التسجيل"
+
+#: .\school_management\models.py:289
+#, fuzzy
+#| msgid "Institution name"
+msgid "institution name"
+msgstr "اسم المؤسسة"
+
+#: .\school_management\models.py:290
+#, fuzzy
+#| msgid "License number"
+msgid "license number"
+msgstr "رقم الترخيص"
+
+#: .\school_management\models.py:291
+#, fuzzy
+#| msgid "Director name"
+msgid "director name"
+msgstr "اسم المدير"
+
+#: .\school_management\models.py:291
+#, fuzzy
+#| msgid "Document Generator - Trust Academy"
+msgid "Director of Trust Academy"
+msgstr "مولد المستندات - أكاديمية ترست"
+
+#: .\school_management\models.py:292
+#, fuzzy
+#| msgid "Issue city"
+msgid "issue city"
+msgstr "مدينة الإصدار"
+
+#: .\school_management\models.py:292
+msgid "Boumerdes"
+msgstr ""
+
+#: .\school_management\models.py:293
+#, fuzzy
+#| msgid "Issue date"
+msgid "issue date"
+msgstr "تاريخ الإصدار"
+
+#: .\school_management\models.py:294
+#, fuzzy
+#| msgid "Is issued"
+msgid "is issued"
+msgstr "تم الإصدار"
+
+#: .\school_management\models.py:295
+#, fuzzy
+#| msgid "Certificate number"
+msgid "certificate number"
+msgstr "رقم الشهادة"
+
+#: .\school_management\models.py:307
+#, fuzzy
+#| msgid "Certificate number"
+msgid "Certificate"
+msgstr "رقم الشهادة"
+
+#: .\school_management\templates\admin\document_generator.html:5
+#: .\school_management\templates\admin\document_generator.html:33
+msgid "Document Generator - Trust Academy"
+msgstr "مولد المستندات - أكاديمية ترست"
+
+#: .\school_management\templates\admin\document_generator.html:50
+msgid "Multi-Format"
+msgstr "متعدد التنسيقات"
+
+#: .\school_management\templates\admin\document_generator.html:51
+msgid "Generate documents in PDF and Excel formats"
+msgstr "إنشاء مستندات بتنسيقات PDF و Excel"
+
+#: .\school_management\templates\admin\document_generator.html:54
+msgid "Multi-Language"
+msgstr "متعدد اللغات"
+
+#: .\school_management\templates\admin\document_generator.html:55
+msgid "Available in English, French, and Arabic"
+msgstr "متاح باللغات الإنجليزية والفرنسية والعربية"
+
+#: .\school_management\templates\admin\document_generator.html:58
+msgid "Mobile Friendly"
+msgstr "ملائم للجوال"
+
+#: .\school_management\templates\admin\document_generator.html:59
+msgid "Optimized for PC, mobile, and printing"
+msgstr "مُحسّن للكمبيوتر والجوال والطباعة"
+
+#: .\school_management\templates\admin\document_generator.html:62
+msgid "WhatsApp Ready"
+msgstr "جاهز للواتساب"
+
+#: .\school_management\templates\admin\document_generator.html:63
+msgid "Easy sharing via WhatsApp"
+msgstr "مشاركة سهلة عبر الواتساب"
+
+#: .\school_management\templates\admin\document_generator.html:69
+msgid "Meeting Invitations"
+msgstr "دعوات الاجتماعات"
+
+#: .\school_management\templates\admin\document_generator.html:71
+msgid "Parent Meeting Invitations"
+msgstr "دعوات اجتماع أولياء الأمور"
+
+#: .\school_management\templates\admin\document_generator.html:72
+msgid "Generate professional meeting invitations for parents"
+msgstr "إنشاء دعوات اجتماع احترافية لأولياء الأمور"
+
+#: .\school_management\templates\admin\document_generator.html:74
+#: .\school_management\templates\admin\document_generator.html:89
+#: .\school_management\templates\admin\document_generator.html:109
+#: .\school_management\templates\admin\document_generator.html:152
+#: .\school_management\templates\admin\document_generator.html:172
+#: .\school_management\templates\admin\document_generator.html:205
+#: .\school_management\templates\admin\document_generator.html:225
+msgid "Language:"
+msgstr "اللغة:"
+
+#: .\school_management\templates\admin\document_generator.html:86
+msgid "Staff Meeting Invitations"
+msgstr "دعوات اجتماع الموظفين"
+
+#: .\school_management\templates\admin\document_generator.html:87
+msgid "Generate meeting invitations for teaching and administrative staff"
+msgstr "إنشاء دعوات اجتماع للموظفين التعليميين والإداريين"
+
+#: .\school_management\templates\admin\document_generator.html:103
+msgid "Student Lists & Information"
+msgstr "قوائم الطلاب والمعلومات"
+
+#: .\school_management\templates\admin\document_generator.html:106
+msgid "Complete Student List"
+msgstr "قائمة الطلاب الكاملة"
+
+#: .\school_management\templates\admin\document_generator.html:107
+msgid ""
+"All students with full information (ID, name, grade, parent contacts, "
+"address, etc.)"
+msgstr ""
+"جميع الطلاب بمعلومات كاملة (الهوية، الاسم، الصف، جهات اتصال الوالدين، "
+"العنوان، إلخ)"
+
+#: .\school_management\templates\admin\document_generator.html:121
+msgid "Student Lists by Class"
+msgstr "قوائم الطلاب حسب الفصل"
+
+#: .\school_management\templates\admin\document_generator.html:122
+msgid "Detailed student information organized by class"
+msgstr "معلومات الطلاب التفصيلية منظمة حسب الفصل"
+
+#: .\school_management\templates\admin\document_generator.html:127
+msgid "students"
+msgstr "الطلاب"
+
+#: .\school_management\templates\admin\document_generator.html:140
+msgid "No classes found. Please add classes in the admin first."
+msgstr "لم يتم العثور على فصول. يرجى إضافة فصول في الإدارة أولاً."
+
+#: .\school_management\templates\admin\document_generator.html:148
+#: .\school_management\templates\admin\document_generator.html:283
+msgid "Staff Directory"
+msgstr "دليل الموظفين"
+
+#: .\school_management\templates\admin\document_generator.html:150
+msgid ""
+"Complete staff directory with contact information, positions, and departments"
+msgstr "دليل الموظفين الكامل مع معلومات الاتصال والمناصب والإدارات"
+
+#: .\school_management\templates\admin\document_generator.html:166
+msgid "Report Cards & Grades"
+msgstr "كشوف الدرجات والعلامات"
+
+#: .\school_management\templates\admin\document_generator.html:169
+msgid "Student Report Cards"
+msgstr "كشوف درجات الطلاب"
+
+#: .\school_management\templates\admin\document_generator.html:170
+msgid ""
+"Comprehensive report cards with grades, comments, and performance analysis"
+msgstr "كشوف درجات شاملة مع العلامات والتعليقات وتحليل الأداء"
+
+#: .\school_management\templates\admin\document_generator.html:184
+msgid "Grade Sheets by Class"
+msgstr "كشوف العلامات حسب الفصل"
+
+#: .\school_management\templates\admin\document_generator.html:185
+msgid "Detailed grade reports organized by class and subject"
+msgstr "تقارير العلامات التفصيلية منظمة حسب الفصل والمادة"
+
+#: .\school_management\templates\admin\document_generator.html:200
+msgid "Payslips"
+msgstr "كشوف المرتبات"
+
+#: .\school_management\templates\admin\document_generator.html:202
+msgid "Staff Payslips"
+msgstr "كشوف مرتبات الموظفين"
+
+#: .\school_management\templates\admin\document_generator.html:203
+msgid "Generate professional payslips for all staff members"
+msgstr "إنشاء كشوف مرتبات احترافية لجميع الموظفين"
+
+#: .\school_management\templates\admin\document_generator.html:219
+msgid "School Certificates"
+msgstr "شهادات المدرسة"
+
+#: .\school_management\templates\admin\document_generator.html:223
+msgid ""
+"Generate achievement certificates, completion certificates, and recognition "
+"awards"
+msgstr "إنشاء شهادات الإنجاز وشهادات الإتمام وجوائز التقدير"
+
+#: .\school_management\templates\admin\document_generator.html:236
+msgid "Attendance Certificates"
+msgstr "شهادات الحضور"
+
+#: .\school_management\templates\admin\document_generator.html:237
+msgid "Generate attendance and participation certificates"
+msgstr "إنشاء شهادات الحضور والمشاركة"
+
+#: .\school_management\templates\admin\document_generator.html:248
+msgid "Additional Documents"
+msgstr "مستندات إضافية"
+
+#: .\school_management\templates\admin\document_generator.html:252
+msgid "School Calendar"
+msgstr "تقويم المدرسة"
+
+#: .\school_management\templates\admin\document_generator.html:253
+msgid "Academic year calendar with holidays and events"
+msgstr "تقويم السنة الدراسية مع العطلات والفعاليات"
+
+#: .\school_management\templates\admin\document_generator.html:259
+msgid "Class Schedules"
+msgstr "جداول الحصص"
+
+#: .\school_management\templates\admin\document_generator.html:260
+msgid "Weekly class schedules and timetables"
+msgstr "جداول الحصص الأسبوعية والجداول الزمنية"
+
+#: .\school_management\templates\admin\document_generator.html:266
+msgid "Fee Statements"
+msgstr "كشوف الرسوم"
+
+#: .\school_management\templates\admin\document_generator.html:267
+msgid "Student fee statements and payment records"
+msgstr "كشوف رسوم الطلاب وسجلات الدفع"
+
+#: .\school_management\templates\admin\document_generator.html:273
+msgid "School ID Cards"
+msgstr "بطاقات هوية المدرسة"
+
+#: .\school_management\templates\admin\document_generator.html:274
+msgid "Student and staff ID cards"
+msgstr "بطاقات هوية الطلاب والموظفين"
+
+#: .\school_management\templates\admin\document_generator.html:281
+msgid "Quick Actions"
+msgstr "إجراءات سريعة"
+
+#: .\school_management\templates\admin\document_generator.html:282
+msgid "Student List"
+msgstr "قائمة الطلاب"
+
+#: .\school_management\templates\admin\document_generator.html:284
+msgid "Report Cards"
+msgstr "كشوف الدرجات"
+
+#: .\school_management\templates\admin\document_generator.html:285
+msgid "Parent Meeting"
+msgstr "اجتماع أولياء الأمور"
+
+#: .\school_management\templates\admin\document_generator.html:286
+msgid "Back to Admin"
+msgstr "العودة إلى الإدارة"
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
+msgid "Messages"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+#, fuzzy
+#| msgid "Section"
+msgid "Syndication"
+msgstr "القسم"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:50
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:52
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:54
+msgid "That page contains no results"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:104
+#: .\venv\Lib\site-packages\django\forms\fields.py:752
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:165
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:176
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:279
+#: .\venv\Lib\site-packages\django\core\validators.py:287
+#: .\venv\Lib\site-packages\django\core\validators.py:316
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:296
+#: .\venv\Lib\site-packages\django\core\validators.py:317
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:308
+#: .\venv\Lib\site-packages\django\core\validators.py:315
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:351
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:357
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:392
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:401
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:410
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:420
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:438
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:461
+#: .\venv\Lib\site-packages\django\forms\fields.py:347
+#: .\venv\Lib\site-packages\django\forms\fields.py:386
+#, fuzzy
+#| msgid "License number"
+msgid "Enter a number."
+msgstr "رقم الترخيص"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:463
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:468
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:544
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:605
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1423
+#: .\venv\Lib\site-packages\django\forms\models.py:893
+msgid "and"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1149
+msgid "String (unlimited)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1253
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1358
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1362
+msgid "Date (without time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
+msgid "Date (with time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1628
+#, fuzzy
+#| msgid "Receipt number"
+msgid "Decimal number"
+msgstr "رقم الإيصال"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1789
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
+#, fuzzy
+#| msgid "Location"
+msgid "Duration"
+msgstr "الموقع"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1845
+#, fuzzy
+#| msgid "Address"
+msgid "Email address"
+msgstr "العنوان"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1870
+msgid "File path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1950
+#, fuzzy
+#| msgid "Registration number"
+msgid "Floating point number"
+msgstr "رقم التسجيل"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1992
+msgid "Integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2105
+msgid "Small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2113
+#, fuzzy
+#| msgid "Address"
+msgid "IPv4 address"
+msgstr "العنوان"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2144
+#, fuzzy
+#| msgid "Address"
+msgid "IP address"
+msgstr "العنوان"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2237
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2291
+msgid "Positive big integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2306
+msgid "Positive integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2321
+msgid "Positive small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2373
+msgid "Text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2448
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2452
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2456
+msgid "Time"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2564
+msgid "URL"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2588
+msgid "Raw binary data"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2655
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:232
+msgid "File"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:393
+msgid "Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+#, fuzzy
+#| msgid "Subject"
+msgid "A JSON object"
+msgstr "المادة"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:28
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:919
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1212
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1319
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:184
+msgid ":?.!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:91
+msgid "This field is required."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:298
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:467
+#: .\venv\Lib\site-packages\django\forms\fields.py:1241
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:490
+#: .\venv\Lib\site-packages\django\forms\fields.py:1242
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:517
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:551
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:622
+msgid "No file was submitted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:623
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:625
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:630
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:694
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:857
+#: .\venv\Lib\site-packages\django\forms\fields.py:949
+#: .\venv\Lib\site-packages\django\forms\models.py:1566
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:951
+#: .\venv\Lib\site-packages\django\forms\fields.py:1070
+#: .\venv\Lib\site-packages\django\forms\models.py:1564
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1071
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1310
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1340
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:98
+msgid ":"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:244
+#: .\venv\Lib\site-packages\django\forms\forms.py:328
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:886
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:891
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:898
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:907
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1338
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1429
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1568
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:463
+msgid "Clear"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:464
+#, fuzzy
+#| msgid "Currency"
+msgid "Currently"
+msgstr "العملة"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:465
+msgid "Change"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:794
+msgid "Unknown"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:795
+msgid "Yes"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:796
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:861
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:891
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:908
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:910
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:912
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:914
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:916
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:918
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:73
+msgid "p.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "a.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:79
+msgid "PM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "AM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:152
+msgid "midnight"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:154
+msgid "noon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+#, fuzzy
+#| msgid "Status"
+msgid "Sat"
+msgstr "الحالة"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+#, fuzzy
+#| msgid "Student"
+msgid "Sun"
+msgstr "الطالب"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+#, fuzzy
+#| msgid "Receipt number"
+msgid "September"
+msgstr "رقم الإيصال"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+#, fuzzy
+#| msgid "Receipt number"
+msgid "December"
+msgstr "رقم الإيصال"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+#, fuzzy
+#| msgid "Receipt number"
+msgctxt "alt. month"
+msgid "September"
+msgstr "رقم الإيصال"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+#, fuzzy
+#| msgid "Receipt number"
+msgctxt "alt. month"
+msgid "December"
+msgstr "رقم الإيصال"
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:84
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:269
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:288
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:111
+msgid "Forbidden"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+#, fuzzy
+#| msgid "Date of birth"
+msgid "Date out of range"
+msgstr "تاريخ الميلاد"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:349
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:229
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:247
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#~ msgid "ADVANCED DOCUMENT GENERATOR"
+#~ msgstr "مولد المستندات المتقدم"
+
+#~ msgid ""
+#~ "Generate comprehensive school documents in PDF/Excel format with multi-"
+#~ "language support (English, French, Arabic). Perfect for printing, mobile "
+#~ "viewing, and WhatsApp sharing"
+#~ msgstr ""
+#~ "أنشئ مستندات مدرسية شاملة بصيغة PDF/Excel مع دعم متعدد اللغات "
+#~ "(الإنجليزية، الفرنسية، العربية). مثالي للطباعة، والعرض على الهواتف "
+#~ "المحمولة، والمشاركة عبر واتساب"
+
+#~ msgid "OPEN FULL DOCUMENT GENERATOR"
+#~ msgstr "افتح منشئ المستندات الكامل"
+
+#~ msgid "Staff PDF"
+#~ msgstr "كشوفات الموظفين PDF"
+
+#~ msgid "Students PDF"
+#~ msgstr "كشوفات الطلاب PDF"
+
+#~ msgid "SCHOOL MANAGEMENT"
+#~ msgstr "إدارة المدرسة"
+
+#~ msgid "School Settings"
+#~ msgstr "إعدادات المدرسة"

@@ -1,0 +1,177 @@
+﻿{% extends "admin/change_list.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    .period-filter {
+        background: white;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-left: 4px solid #667eea;
+    }
+    
+    .filter-form {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .filter-form select, .filter-form button {
+        padding: 10px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        height: 40px;
+        min-height: 40px;
+    }
+    
+    .filter-form select {
+        min-width: 150px;
+    }
+    
+    .paid-row {
+        background-color: #f8fff8 !important;
+    }
+    
+    .pending-row {
+        background-color: #fffbf0 !important;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Period Filter -->
+<div class="period-filter">
+    <h4 style="margin: 0 0 15px 0; color: #333;">
+        <i class="fas fa-filter"></i> Filtre par Période
+    </h4>
+    <form method="get" class="filter-form">
+        <!-- Month Filter -->
+        <select name="month">
+            <option value="">Tous les mois</option>
+            {% for month_num, month_name in months %}
+            <option value="{{ month_num }}" {% if request.GET.month == month_num %}selected{% endif %}>
+                {{ month_name }}
+            </option>
+            {% endfor %}
+        </select>
+        
+        <!-- Year Filter -->
+        <select name="year">
+            <option value="">Toutes les années</option>
+            {% for year in years %}
+            <option value="{{ year }}" {% if request.GET.year == year|stringformat:"s" %}selected{% endif %}>
+                {{ year }}
+            </option>
+            {% endfor %}
+        </select>
+        
+        <!-- Status Filter - Fixed parameter name -->
+        <select name="is_paid__exact">
+            <option value="">Tous les statuts</option>
+            <option value="1" {% if request.GET.is_paid__exact == "1" %}selected{% endif %}>Payé</option>
+            <option value="0" {% if request.GET.is_paid__exact == "0" %}selected{% endif %}>En attente</option>
+        </select>
+        
+        <button type="submit" style="background: #667eea; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; height: 40px;">
+            <i class="fas fa-search"></i> Filtrer
+        </button>
+        
+        <a href="?" style="background: #6c757d; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; height: 40px; display: inline-flex; align-items: center;">
+            <i class="fas fa-times"></i> Réinitialiser
+        </a>
+    </form>
+</div>
+
+<!-- Original Admin Content -->
+{{ block.super }}
+{% endblock %}
+
+{% block object-tools %}
+<div class="object-tools" style="margin-bottom: 15px;">
+    <div class="quick-actions" style="justify-content: flex-end; display: flex; gap: 10px;">
+        <a href="{% url 'admin:school_management_payroll_add' %}" style="background: #28a745; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fas fa-plus-circle"></i> Ajouter Fiche de Paie
+        </a>
+    </div>
+</div>
+{{ block.super }}
+{% endblock %}
+
+{% block javascript %}
+{{ block.super }}
+<script>
+(function($) {
+    $(document).ready(function() {
+        // Add custom JavaScript for payroll management
+        console.log('Payroll management loaded');
+        
+        // Enhance row display with status badges
+        $('table#result_list tr').each(function() {
+            var $row = $(this);
+            var $statusCell = $row.find('td.field-payment_status');
+            var $paidCheckbox = $row.find('td.field-is_paid input[type="checkbox"]');
+            
+            if ($statusCell.length && $paidCheckbox.length) {
+                var statusHtml = $statusCell.html();
+                if (statusHtml.includes('PAYÉ')) {
+                    $paidCheckbox.prop('checked', true);
+                    $row.addClass('paid-row');
+                } else {
+                    $paidCheckbox.prop('checked', false);
+                    $row.addClass('pending-row');
+                }
+            }
+        });
+        
+        // Quick payment toggle
+        $('td.field-is_paid input[type="checkbox"]').on('change', function() {
+            var $checkbox = $(this);
+            var $row = $checkbox.closest('tr');
+            
+            if ($checkbox.is(':checked')) {
+                $row.addClass('paid-row').removeClass('pending-row');
+            } else {
+                $row.addClass('pending-row').removeClass('paid-row');
+            }
+        });
+        
+        // Add custom action buttons to action dropdown
+        var actionsSelect = $('.actions select');
+        if (actionsSelect.length) {
+            actionsSelect.prepend(
+                '<option value="calculate_social_security">Recalculer les cotisations sociales</option>' +
+                '<option value="generate_payslips_pdf">Générer les fiches de paie PDF</option>' +
+                '<option value="mark_as_paid">Marquer comme payé</option>' +
+                '<option value="mark_as_unpaid">Marquer comme non payé</option>'
+            );
+        }
+    });
+    
+    // Custom functions for buttons
+    function generatePayslips() {
+        var selected = $('input.action-select:checked');
+        if (selected.length === 0) {
+            alert('Veuillez sélectionner au moins une fiche de paie pour générer les bulletins.');
+            return;
+        }
+        
+        // Use the existing admin action
+        $('.actions select').val('generate_payslips_pdf');
+        $('button[name="index"]').click();
+    }
+    
+    function calculateAll() {
+        if (confirm('Recalculer toutes les fiches de paie ? Cette action peut prendre quelques secondes.')) {
+            $('.actions select').val('calculate_social_security');
+            $('input.action-select').prop('checked', true);
+            $('button[name="index"]').click();
+        }
+    }
+    
+})(django.jQuery);
+</script>
+{% endblock %}

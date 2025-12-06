@@ -1,0 +1,67 @@
+﻿{% extends 'staff/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="container">
+    <h1>📅 {% trans "Class Schedules" %}</h1>
+    
+    <div class="card">
+        <form method="get">
+            <label><strong>{% trans "Grade Level" %}:</strong></label>
+            <select name="grade_level" onchange="this.form.submit()">
+                {% for value, label in grade_levels %}
+                <option value="{{ value }}" {% if grade_level == value %}selected{% endif %}>
+                    {{ label }}
+                </option>
+                {% endfor %}
+            </select>
+        </form>
+        
+        <div style="margin-top: 20px;">
+            <a href="{% url 'generate_schedule_pdf' grade_level %}" class="btn btn-pdf">
+                📊 {% trans "Generate PDF" %}
+            </a>
+            <a href="{% url 'schedule_add' %}?grade_level={{ grade_level }}" class="btn" style="background: #28a745;">
+                ➕ {% trans "Add Schedule" %}
+            </a>
+        </div>
+    </div>
+
+    {% for schedule in schedules %}
+    <div class="card">
+        <h3>{{ schedule.get_day_display }}</h3>
+        
+        <div class="schedule-grid">
+            <div class="time-slot"><strong>{% trans "08h-09h30" %}:</strong> {{ schedule.time_0800_0930|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "09h30-10h30" %}:</strong> {{ schedule.time_0930_1030|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "10h30-11h30" %}:</strong> {{ schedule.time_1030_1130|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "11h30-12h00" %}:</strong> {{ schedule.time_1130_1200|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "12h00-13h00" %}:</strong> {{ schedule.time_1200_1300|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "13h30-14h30" %}:</strong> {{ schedule.time_1330_1430|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "14h30-15h00" %}:</strong> {{ schedule.time_1430_1500|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "15h00-15h30" %}:</strong> {{ schedule.time_1500_1530|default:"-" }}</div>
+            <div class="time-slot"><strong>{% trans "After 15h30" %}:</strong> {{ schedule.time_after_1530|default:"-" }}</div>
+        </div>
+        
+        {% if schedule.notes %}
+        <div class="notes">
+            <strong>{% trans "Notes" %}:</strong> {{ schedule.notes }}
+        </div>
+        {% endif %}
+        
+        <div style="margin-top: 15px;">
+            <a href="{% url 'schedule_edit' schedule.id %}" class="btn">
+                ✏️ {% trans "Edit" %}
+            </a>
+        </div>
+    </div>
+    {% empty %}
+    <div class="card">
+        <p>{% trans "No schedule found for this level." %}</p>
+        <a href="{% url 'schedule_add' %}?grade_level={{ grade_level }}" class="btn" style="background: #28a745;">
+            ➕ {% trans "Create first schedule" %}
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - {{ school_name }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .navbar-nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .navbar-nav a:hover {
+            color: #3498db;
+        }
+        
+        .btn-login {
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .contact-header {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        .contact-info {
+            margin: 1rem 0;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+
+        .hours-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .hours-list li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-developer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}" class="navbar-brand">{{ school_name }}</a>
+        <div class="navbar-nav">
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'staff_login' %}" class="btn-login">Staff Login</a>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Trust Academy</h1>
+            <p style="font-size: 1.2rem; color: #666;">Get in touch with us - we're here to help</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Visit Our Campus</h3>
+                <div class="contact-info">
+                    <p><strong>Address:</strong></p>
+                    <p>Lotissement Ibn Khaldoun 1200</p>
+                    <p>Villa Numéro 22</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone Numbers</h3>
+                <div class="contact-info">
+                    <p><strong>Primary:</strong> 05 61 15 28 00</p>
+                    <p><strong>Secondary:</strong> 024 79 20 64</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">🕒</div>
+                <h3>Operating Hours</h3>
+                <ul class="hours-list">
+                    <li><strong>Sunday - Thursday:</strong> 7:30 AM - 5:00 PM</li>
+                    <li><strong>Saturday:</strong> 8:00 AM - 16:00 PM</li>
+                    <li><strong>Friday:</strong> Closed</li>
+                </ul>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <p>We welcome parents and guardians to visit our campus, meet our staff, and learn more about our educational programs.</p>
+                    <p><strong>Feel free to call us during operating hours for any inquiries!</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-developer">
+            <p>© 2025 SB | IntelliManage Team. All rights reserved.</p>
+            <p>Contact: +213 794989473 | sa.benammar@gmail.com</p>
+            <p><em>Professional School Management Solutions</em></p>
+        </div>
+    </footer>
+</body>
+</html>
