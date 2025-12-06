@@ -3025,7 +3025,7 @@ class PayrollAdmin(admin.ModelAdmin):
     
     def export_payroll_excel(self, request, queryset):
         """Export payroll data to Excel with detailed breakdown"""
-        import pandas as pd
+        #import pandas as pd
         from django.http import HttpResponse
         
         # Create detailed DataFrame

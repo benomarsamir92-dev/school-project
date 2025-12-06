@@ -1,5 +1,5 @@
 import io
-import pandas as pd
+#import pandas as pd
 from django.http import HttpResponse
 from django.shortcuts import render
 from reportlab.pdfgen import canvas
