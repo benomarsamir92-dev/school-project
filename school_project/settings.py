@@ -340,3 +340,42 @@ print(f"   - USE_I18N: {USE_I18N}")
 print(f"   - TIME_ZONE: {TIME_ZONE}")
 print(f"   - LOCALE_PATHS: {LOCALE_PATHS}")
 print(f"   - ✅ Gettext dependency removed - Translations will work!")
+
+# ==================== RENDER CONFIGURATION ====================
+if 'RENDER' in os.environ:
+    # Render PostgreSQL configuration (override the earlier one)
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=os.environ.get('DATABASE_URL'),
+            conn_max_age=600
+        )
+    }
+    
+    # Turn off DEBUG mode in production
+    DEBUG = False
+    
+    # Add Render hostname to ALLOWED_HOSTS
+    RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+    if RENDER_EXTERNAL_HOSTNAME:
+        ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+    
+    # Add HTTPS to CSRF_TRUSTED_ORIGINS for Render
+    CSRF_TRUSTED_ORIGINS.append(f'https://{RENDER_EXTERNAL_HOSTNAME}')
+    
+    # Add security settings for production
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    
+    # Use WhiteNoise for static files
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
+    
+    print(f"✅ Render production mode activated")
+    print(f"✅ ALLOWED_HOSTS: {ALLOWED_HOSTS}")
+else:
+    # Local development settings
+    DEBUG = True
+    print("✅ Local development mode")
